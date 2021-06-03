@@ -24,8 +24,6 @@ const ChatRoom = (props) => {
   const [uid, setUid] = useState("");
   const [chatContent, setChatContent] = useState("");
 
-  //immer로 해야 겠군..!
-
 
   const [users, setUsers] = useState({});
   const { channelId } = useParams();

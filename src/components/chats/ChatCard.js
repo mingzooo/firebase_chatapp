@@ -5,6 +5,7 @@ const ChatCard = React.memo(({ chat, users, index, uid, onEmojiClick }) => {
     const user = users[chat.uid]
     if (user) {
       return (user.nickName)
+      // 닉네임 제대로 안뜬다 왜지? 제대로 연결한것같은데?
     } else {
       return "익명"
     }
@@ -58,7 +59,6 @@ const ChatCard = React.memo(({ chat, users, index, uid, onEmojiClick }) => {
   </div>
 }, (prevProps, nextProps) => {
   // console.log('chat card');
-  // console.log((prevProps.chat === nextProps.chat) && (prevProps.users === nextProps.users))
   return (prevProps.chat === nextProps.chat) && (prevProps.users === nextProps.users)
 });
 
