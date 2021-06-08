@@ -20,7 +20,7 @@
 .env
 
 #DB
-firebase.js
+/src/firebase.js
 
 
 npm-debug.log*
