@@ -36,11 +36,6 @@ const ChatRoom = (props) => {
     setSearch(text);
   }
 
-  const memoizedText = useMemo(() => {
-    console.log('use memo');
-    return <div>{text} - {search}</div>
-  }, [search])
-
   useEffect(() => {
     firebaseApp.auth().onAuthStateChanged((user) => {
       const uid = (firebaseApp.auth().currentUser || {}).uid
@@ -214,9 +209,9 @@ const ChatRoom = (props) => {
             <textarea className="default_textarea f1 p8"
               placeholder="send a message to this channel"
               value={chatContent} onChange={evt => { onTextareaChange(evt) }}></textarea>
-          </div>
-          <div className="flex jce fdr">
-            <div className="btn btn-success h40 w40" onClick={evt => addDocument()}><BiSend /></div>
+            <div className="flex jce fdr">
+              <div className="btn btn-success h40 w40" onClick={evt => addDocument()}><BiSend /></div>
+            </div>
           </div>
         </div>
       </div>
