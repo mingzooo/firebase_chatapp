@@ -191,15 +191,6 @@ const ChatRoom = (props) => {
   }
 
   return <div style={{ position: 'relative' }} className="vh100">
-
-    <input value={text} onChange={evt => { setText(evt.target.value) }} />
-
-    <div onClick={onClick}>??????</div>
-
-    <hr />
-
-    {memoizedText}
-
     <div className="flex fdr vh100">
       <div className="w200 bg_black p16">
         <div className="color_white flex fdr aic cursor_pointer" onClick={evt => { logout() }}>

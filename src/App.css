@@ -248,10 +248,6 @@ a {
 
 
 
-.chat_card {
-  
-}
-
 .chat_card:hover {
   background-color:rgba(0,0,0,0.05);
 }
