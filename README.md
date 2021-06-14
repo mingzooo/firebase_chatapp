@@ -1,4 +1,4 @@
-# [✨Chat chat!✨](https://minjoopark-99.github.io/firebase_chatapp)  
+# [✨Chat chat!✨](https://mingzooo.github.io/firebase_chatapp)  
 firebase를 사용한 chatapp 
 
 ## Skill  
